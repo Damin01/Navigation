@@ -1,1 +1,3 @@
 # Navigation
+
+Use main.py to extract navigation data. This programs extracts data from 3D accelerometer and gyroscope to provide velocity and position data in i-frame. The accelerometer data should be in g's and gyroscope data should be in deg/s. In order to get the best result, the latitude, longitude, and height should be provided to define the gravity in the place where is experiment is occuring. For isntance, some one can use google earth to find this data. Also, the beginning and end of peak should be used to cut off data as noise from the sensors can affect the readings and give quite an inaccurate readings. There are no filters added to this program, thus after few minutes of use, it is possible that added noise can effect the data and ruin the results.
