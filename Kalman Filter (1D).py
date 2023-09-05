@@ -47,6 +47,7 @@ for i in range(N-1):
     xhat = xhat + np.matmul(K, (y - np.matmul(np.matrix(H).transpose(), np.matrix(xhat))))
 
 fig, ax = plt.subplots()
+ax.set_title('1D Kalman Filter')
 ax.plot(xhistory, label = r'$x_{k}$')
 ax.plot(xhathistory,'--', label = '$\hat{x}$')
 ax.grid()
